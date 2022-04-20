@@ -46,7 +46,7 @@ H5P.ExportableTextArea = (function ($, EventDispatcher) {
 
 
   C.prototype.triggerConsumed = function () {
-    var title = this.contentData.hasOwnProperty("metadata") && this.contentData.metadata.hasOwnProperty("title") ? this.contentData.metadata.title : "Continuous Text";
+    var title = this.contentData.hasOwnProperty("metadata") && this.contentData.metadata.hasOwnProperty("title") ? this.contentData.metadata.title : "Exportable Text Area";
     var xAPIEvent = this.createXAPIEventTemplate({
       id: 'http://activitystrea.ms/schema/1.0/consume',
       display: {
